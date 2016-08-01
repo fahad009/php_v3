@@ -191,7 +191,10 @@
 
                     setTimeout(function(){
                         document.getElementById("login-modal").style.display="none";
-                        document.getElementById("hello1239").style.overflow="auto !important";
+
+                        $('head > link').filter(':first').replaceWith(defaultCSS);
+
+                      //  document.getElementById("hello1239").style.overflow="auto !important";
                         document.getElementById("invalidd").innerHTML="";
                         document.getElementById("AccessToken").value="";
                         document.getElementById("pass").value="";
