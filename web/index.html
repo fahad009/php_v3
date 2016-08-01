@@ -83,7 +83,7 @@
 
 
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog">
+    <div class="modal-dialog" id="hello1239">
         <div class="loginmodal-container">
             <h1>Login</h1><br>
             <h5 id="invalidd" style="color:red;"></h5>
@@ -191,7 +191,7 @@
 
                     setTimeout(function(){
                         document.getElementById("login-modal").style.display="none";
-document.getElementsByClassName("modal-open").style.overflow="auto";
+                        document.getElementById("hello1239").style.overflow="auto !important";
                         document.getElementById("invalidd").innerHTML="";
                         document.getElementById("AccessToken").value="";
                         document.getElementById("pass").value="";
